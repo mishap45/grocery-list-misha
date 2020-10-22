@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
 import * as serviceWorker from './serviceWorker'
-import {Provider} from "react-redux";
-import ReduxStore from "./Store/Redux";
-import {BrowserRouter} from "react-router-dom";
+import {Provider} from 'react-redux'
+import ReduxStore from './Store/Redux'
+import {BrowserRouter} from 'react-router-dom'
+import AppContainer from './AppContainer'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={ReduxStore}>
         <BrowserRouter>
-            <App />
+            <AppContainer />
         </BrowserRouter>
     </Provider>
   </React.StrictMode>,

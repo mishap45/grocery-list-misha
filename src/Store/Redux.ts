@@ -1,8 +1,9 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux'
 import thunkMiddleware from 'redux-thunk'
+import MainReducer from './Reducers/MainReducer'
 
 let reducersBox = combineReducers({
-
+    mainReducer: MainReducer
 });
 
 type rootReducerType = typeof reducersBox;
