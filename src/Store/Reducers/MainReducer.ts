@@ -15,11 +15,8 @@ type initialStateType = {
 }
 
 let initialState: initialStateType = {
-    List: [{id: 1, name: 'Ананас', priority: 3, dateChange: '22/10/2020 | 17:46'},
-        {id: 2, name: 'Борошно', priority: 1, dateChange: '22/10/2020 | 17:46'},
-        {id: 3, name: 'Хліб', priority: 2, dateChange: '22/10/2020 | 17:46'}
-        ],
-    DeleteList: [{id: 1, name: 'Яйця', priority: 3, dateChange: '22/10/2020 | 17:46'}]
+    List: [],
+    DeleteList: []
 };
 
 const MainReducer = (state = initialState, action: MainTypesCollapse): initialStateType => {
