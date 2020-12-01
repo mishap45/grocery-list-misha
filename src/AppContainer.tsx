@@ -13,7 +13,8 @@ type ownPropsType = {}
 type propsAppContainerType = statePropsType & dispatchPropsType & ownPropsType
 
 let AppContainer: React.FC<propsAppContainerType>;
-AppContainer = ({}) => {
+
+AppContainer = () => {
     return (
         <App/>
     )
